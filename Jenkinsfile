@@ -12,7 +12,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 bat '"C:/Users/malih/AppData/Local/Programs/Python/Python314/python.exe" -m pip install --upgrade pip'
-                bat 'pip install -r requirements.txt'
+                bat '"C:/Users/malih/AppData/Local/Programs/Python/Python314/python.exe" -m pip install -r requirements.txt'
             }
         }
 
