@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest --junitxml=test-results.xml --html=report.html --self-contained-html'
+                bat '"C:/Users/malih/AppData/Local/Programs/Python/Python314/python.exe" -m pytest --junitxml=test-results.xml --html=report.html --self-contained-html'
             }
         }
     }
